@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
+import Box from '../components/box';
 
 const theme = {
   colors: {
@@ -12,6 +13,7 @@ export const Index = () => {
     <div>
       <ThemeProvider theme={theme}>
         <p css={(theme) => ({ color: theme.colors.primary })}>Welcome!</p>
+        <Box p={2}>Styled System</Box>
       </ThemeProvider>
     </div>
   );

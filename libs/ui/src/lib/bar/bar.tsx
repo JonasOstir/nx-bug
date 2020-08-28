@@ -1,20 +1,9 @@
 import React from 'react';
+import { css } from '@styled-system/css';
 
-import styled from '@emotion/styled';
-
-/* eslint-disable-next-line */
-export interface BarProps {}
-
-const StyledBar = styled.div`
-  color: pink;
-`;
-
-export const Bar = (props: BarProps) => {
-  return (
-    <StyledBar>
-      <h1>Welcome to bar!</h1>
-    </StyledBar>
-  );
-};
+export const Bar = () => (
+  <p css={css({ color: 'primary', m: 2 })}>@styled-system/css</p>
+);
 
 export default Bar;
+
